@@ -1,0 +1,17 @@
+li.exhiItem {
+    margin-bottom:0.75rem;
+
+    h1,h2,h3,h4 {
+        margin:0;
+        font-weight:300;
+    }
+
+    h2 {
+        font-weight:400;
+    }
+
+    h4 {
+        opacity:0.5;
+    }
+
+}

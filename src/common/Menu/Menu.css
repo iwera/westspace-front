@@ -1,0 +1,36 @@
+.menu {
+    display:flex;
+    justify-content: space-between;
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    border-top:2px solid black;
+    padding:0.5rem 1rem;
+    background:rgba(255,255,255,1);
+}
+
+.menu ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+    display:flex;
+    li {
+        margin:0 0.5rem;
+    }
+}
+
+.menu-logo,
+.menu-search {
+    flex:0 1 25%;
+}
+
+.menu-search {
+    display:flex;
+    justify-content: flex-end;
+}
+
+.menu-menu {
+    flex:0 1 50%;
+    justify-content: center;
+}
