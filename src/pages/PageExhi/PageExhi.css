@@ -1,0 +1,23 @@
+.exhi-images {
+    display:flex;
+    padding:0 0.25em;
+    //justify-content: center;
+    width:100%;
+
+    > div {
+        flex-grow:1;
+        background:green;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background:white;
+        padding:0.25em;
+
+        img {
+            width:100%;
+            height:auto;
+            vertical-align: bottom;
+        }
+
+    }
+}

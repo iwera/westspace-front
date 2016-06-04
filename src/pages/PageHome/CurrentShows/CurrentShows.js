@@ -2,7 +2,7 @@ import React from 'react';
 import api from '../../../common/api/api';
 import ExhiItem from '../../../common/ExhiItem/ExhiItem';
 
-import styles from './CurrentShows';
+import styles from './CurrentShows.css';
 
 export default class CurrentShows extends React.Component {
 
@@ -20,7 +20,6 @@ export default class CurrentShows extends React.Component {
             this.setState( {
                 current: data.data.items
             });
-            console.log(data.data.items[0]);
         });
 
         api.getUpcomingShows().then(data => {
@@ -34,11 +33,12 @@ export default class CurrentShows extends React.Component {
     render() {
 
         return (
-            <div className="currentExhis">
+            <div>
                 <p>
                     Here's the current exhibitions:
                 </p>
-                <ul className="no-style">
+
+                <ul className='currentExhis'>
                     {
                         this.state.current.map(exhi => {
                             return (<ExhiItem key={exhi.ID} {...exhi} />)

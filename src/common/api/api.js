@@ -1,7 +1,11 @@
-const API_URL = 'http://localhost:8888/api/ws/v1';
+const API_URL = 'http://localhost:8080/api/ws/v1';
 import axios from 'axios';
 
 const api = {
+
+    getMenu() {
+        return axios.get(`${API_URL}/menu`);
+    },
 
     getCurrentShows() {
         return axios.get(`${API_URL}/exhibition/current`);
@@ -18,6 +22,18 @@ const api = {
     getExhibition(id) {
         return axios.get(`${API_URL}/exhibition/${id}`);
     },
+
+    getPage(slug) {
+        return axios.get(`${API_URL}/page/${slug}`);
+    },
+
+    getArtists(letter) {
+        return axios.get(`${API_URL}/artists/az/${letter}`);
+    },
+
+    getArtist(id) {
+        return axios.get(`${API_URL}/artists/${id}`);
+    }
 
 }
 

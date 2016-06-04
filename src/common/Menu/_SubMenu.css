@@ -1,13 +1,12 @@
-.menu {
-    display:flex;
-    justify-content: space-between;
+.sub-menu {
     position:fixed;
-    bottom:0;
+    bottom:2.35em;
     left:0;
     width:100%;
     border-top:2px solid black;
     padding:0.5rem 1rem;
     background:rgba(255,255,255,1);
+    display:flex;
 
     a { position:relative; }
     a.active::before {
@@ -18,32 +17,23 @@
         height: 0.25rem;
         background: black;
         top: -0.78em;
-        z-index:2;
-    }
-
-}
-
-.menu ul {
-    margin:0;
-    padding:0;
-    list-style:none;
-    display:flex;
-    li {
-        margin:0 0.5rem;
     }
 }
 
-.menu-logo,
-.menu-search {
+.sub-menu .sub-parent {
     flex:0 1 25%;
 }
 
-.menu-search {
+.sub-menu ul {
     display:flex;
-    justify-content: flex-end;
-}
-
-.menu-menu {
     flex:0 1 50%;
-    justify-content: center;
+    justify-content:center;
+    margin:0;
+    padding:0;
+    list-style:none;
+
+    li {
+        margin:0 0.5rem;
+    }
+
 }
